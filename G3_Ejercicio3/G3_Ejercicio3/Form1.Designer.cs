@@ -41,10 +41,10 @@
             this.txtprecio = new System.Windows.Forms.TextBox();
             this.txtstock = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvlistado = new System.Windows.Forms.DataGridView();
             this.btneliminar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvlistado)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -75,6 +75,7 @@
             this.btnguardar.TabIndex = 0;
             this.btnguardar.Text = "Guardar";
             this.btnguardar.UseVisualStyleBackColor = true;
+            this.btnguardar.Click += new System.EventHandler(this.btnguardar_Click);
             // 
             // label1
             // 
@@ -165,14 +166,15 @@
             this.label6.TabIndex = 1;
             this.label6.Text = "LISTADO DE PRODUCTOS";
             // 
-            // dataGridView1
+            // dgvlistado
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(15, 42);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(352, 266);
-            this.dataGridView1.TabIndex = 2;
+            this.dgvlistado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvlistado.Location = new System.Drawing.Point(15, 42);
+            this.dgvlistado.Name = "dgvlistado";
+            this.dgvlistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvlistado.Size = new System.Drawing.Size(352, 266);
+            this.dgvlistado.TabIndex = 2;
+            this.dgvlistado.DoubleClick += new System.EventHandler(this.dgvlistado_DoubleClick);
             // 
             // btneliminar
             // 
@@ -182,6 +184,7 @@
             this.btneliminar.TabIndex = 3;
             this.btneliminar.Text = "Eliminar";
             this.btneliminar.UseVisualStyleBackColor = true;
+            this.btneliminar.Click += new System.EventHandler(this.btneliminar_Click);
             // 
             // Form1
             // 
@@ -189,14 +192,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(652, 365);
             this.Controls.Add(this.btneliminar);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvlistado);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvlistado)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -217,7 +220,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnguardar;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvlistado;
         private System.Windows.Forms.Button btneliminar;
     }
 }
