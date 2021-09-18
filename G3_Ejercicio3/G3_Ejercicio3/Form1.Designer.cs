@@ -43,12 +43,15 @@
             this.label6 = new System.Windows.Forms.Label();
             this.dgvlistado = new System.Windows.Forms.DataGridView();
             this.btneliminar = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.btngargarimagen = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvlistado)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btngargarimagen);
             this.groupBox1.Controls.Add(this.txtstock);
             this.groupBox1.Controls.Add(this.txtprecio);
             this.groupBox1.Controls.Add(this.txtmarca);
@@ -172,19 +175,32 @@
             this.dgvlistado.Location = new System.Drawing.Point(15, 42);
             this.dgvlistado.Name = "dgvlistado";
             this.dgvlistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvlistado.Size = new System.Drawing.Size(352, 266);
+            this.dgvlistado.Size = new System.Drawing.Size(352, 258);
             this.dgvlistado.TabIndex = 2;
             this.dgvlistado.DoubleClick += new System.EventHandler(this.dgvlistado_DoubleClick);
             // 
             // btneliminar
             // 
-            this.btneliminar.Location = new System.Drawing.Point(26, 317);
+            this.btneliminar.Location = new System.Drawing.Point(15, 317);
             this.btneliminar.Name = "btneliminar";
             this.btneliminar.Size = new System.Drawing.Size(76, 32);
             this.btneliminar.TabIndex = 3;
             this.btneliminar.Text = "Eliminar";
             this.btneliminar.UseVisualStyleBackColor = true;
             this.btneliminar.Click += new System.EventHandler(this.btneliminar_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // btngargarimagen
+            // 
+            this.btngargarimagen.Location = new System.Drawing.Point(21, 244);
+            this.btngargarimagen.Name = "btngargarimagen";
+            this.btngargarimagen.Size = new System.Drawing.Size(221, 23);
+            this.btngargarimagen.TabIndex = 11;
+            this.btngargarimagen.Text = "Cargar imagen";
+            this.btngargarimagen.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -222,6 +238,8 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DataGridView dgvlistado;
         private System.Windows.Forms.Button btneliminar;
+        private System.Windows.Forms.Button btngargarimagen;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
 
