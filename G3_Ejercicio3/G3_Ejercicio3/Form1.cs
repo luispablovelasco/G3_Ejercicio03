@@ -66,6 +66,7 @@ namespace G3_Ejercicio3
             product.Marca = txtmarca.Text;
             product.Precio = float.Parse(txtprecio.Text);
             product.Stock = Convert.ToInt16(txtstock.Text);
+            product.Imaproducto = Convert.ToString(Image.FromFile(ofdimagen.FileName));
 
             if (edit_indice > -1)
             {
@@ -93,6 +94,24 @@ namespace G3_Ejercicio3
             else
             {
                 MessageBox.Show("Dar doble click sobre el elemento para seleccionar y borrar");
+            }
+        }
+
+        public void btngargarimagen_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (ofdimagen.ShowDialog() == DialogResult.OK)
+                {
+                    string imagen = ofdimagen.FileName;
+                    
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("El archivo seleccionado no es un tipo de imagen válido");
+                throw;
             }
         }
     }

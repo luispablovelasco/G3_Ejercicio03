@@ -43,7 +43,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.dgvlistado = new System.Windows.Forms.DataGridView();
             this.btneliminar = new System.Windows.Forms.Button();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.ofdimagen = new System.Windows.Forms.OpenFileDialog();
             this.btngargarimagen = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvlistado)).BeginInit();
@@ -189,9 +189,9 @@
             this.btneliminar.UseVisualStyleBackColor = true;
             this.btneliminar.Click += new System.EventHandler(this.btneliminar_Click);
             // 
-            // openFileDialog1
+            // ofdimagen
             // 
-            this.openFileDialog1.FileName = "openFileDialog1";
+            this.ofdimagen.FileName = "openFileDialog1";
             // 
             // btngargarimagen
             // 
@@ -201,6 +201,7 @@
             this.btngargarimagen.TabIndex = 11;
             this.btngargarimagen.Text = "Cargar imagen";
             this.btngargarimagen.UseVisualStyleBackColor = true;
+            this.btngargarimagen.Click += new System.EventHandler(this.btngargarimagen_Click);
             // 
             // Form1
             // 
@@ -239,7 +240,7 @@
         private System.Windows.Forms.DataGridView dgvlistado;
         private System.Windows.Forms.Button btneliminar;
         private System.Windows.Forms.Button btngargarimagen;
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.OpenFileDialog ofdimagen;
     }
 }
 

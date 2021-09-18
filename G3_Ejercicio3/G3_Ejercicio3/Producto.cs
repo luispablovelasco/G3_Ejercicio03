@@ -13,6 +13,13 @@ namespace G3_Ejercicio3
         string marca;
         float precio;
         int stock;
+        string imaproducto;
+
+        public string Imaproducto
+        {
+            get { return imaproducto; }
+            set { imaproducto = value; }
+        }
 
         public string Nombre
         {
